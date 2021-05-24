@@ -5,7 +5,7 @@
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
-  "cleanup": true,
+  "cleanup": flow,
   "theme": "cards",
   "theme-style": "./custom.css",
   "footer": "2021 ©PedroZ",
