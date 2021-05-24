@@ -4,7 +4,7 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>MIUI完美图标展示 - Home</title>
+      <title>MIUI完美图标展示 - flyme9</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
       <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
@@ -29,7 +29,7 @@
         Breadcrumbs of parent albums
       -->
       <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="flyme9.html">flyme9</a>
       </nav>
     
     
@@ -37,20 +37,22 @@
         Nested albums, if any
       -->
       <div id="albums" class="justified-gallery">
-            <a href="flyme9.html">
-              <img src="media/small/flyme9/1.jpg" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>flyme9</h3>
-                <div class="summary">1 photo</div>
-              </div>
-            </a>
       </div>
     
       <!--
         All photos and videos
       -->
       <ul id="media" class="clearfix justified-gallery">
-      </ul>
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/flyme9/1.jpg"data-src="media/large/flyme9/1.jpg"data-exthumbimage="media/thumbs/flyme9/1.jpg"data-filename="1.jpg"><a href="media/large/flyme9/1.jpg"><img
+                      src="media/small/flyme9/1.jpg"
+                      width="135"
+                      height="300"alt="1.jpg"/>
+              </a>
+          
+          </div>  </ul>
     
       <!--
         Pagination
@@ -116,30 +118,6 @@
       });
     </script>
 
-      <script id="slider-js" data-interval="">
-        $(document).ready(function () {
-          let waitTime = 1000;
-
-          try {
-            waitTime = parseInt($("#slider-js").data("interval"));
-          } catch (e) {
-            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
-          }
-
-          $("#lightSlider").lightSlider({
-            auto: true,
-            loop: true,
-            item: 1,
-            gallery: true,
-            pause: waitTime,
-            onSliderLoad: (el) => {
-              el.lightGallery({
-                selector: "#lightSlider li"
-              })
-            }
-          });
-        });
-      </script>
 
 
   </body>
